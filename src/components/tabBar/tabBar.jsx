@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
 import { TabBar } from 'antd-mobile'
-
 import HomePage from '../../pages/homePage/homePage'
+
 
 class tabBarComponent extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            selectedTab: 'redTab',
+            selectedTab: 'blueTab',
          }
-    }
-    renderContent(pageText) {
-        return (
-          <div style={{ backgroundColor: 'white', height: '100%', textAlign: 'center' }}>
-            <div style={{ paddingTop: 60 }}>Clicked “{pageText}” tab， show “{pageText}” information</div>
-          </div>
-        );
     }
     render() {
         return (
