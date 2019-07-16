@@ -1,7 +1,7 @@
 import React from 'react';
 import TarBar from "./tabBar/tabBar";
 
-function App() {
+function Main() {
   return (
     <div>
       <TarBar></TarBar>
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
