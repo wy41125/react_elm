@@ -1,9 +1,9 @@
 import React from 'react';
-import TarBar from "./components/tabBar/tabBar";
+import TarBar from "./tabBar/tabBar";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <TarBar></TarBar>
     </div>
   );
