@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import store from '../../store'
-import reducer from '../../store/reducer';
 class HomePage extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +16,7 @@ class HomePage extends Component {
         );
     }
     changeClick(e){
+        e.preventDefault()
         const action = {
             type:'change_home_data',
             value:'homeData'
