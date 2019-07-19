@@ -1,0 +1,31 @@
+@import '../../assets/rem.less';
+
+.homePage{
+    background: #ffffff;
+}
+.address_div{
+    .rem(26);
+    padding-top: @rv; 
+    padding-bottom: @rv;
+    color: #000;
+    &{
+        .rem(50);
+        padding-left: @rv;
+    }
+    &{
+        .rem(40);
+        font-size: @rv;
+    }
+    i{
+        display: inline-block;
+        vertical-align: middle;
+        .rem(46);
+        width: @rv;
+        &{
+            .rem(55);
+            height: @rv;
+        }
+        background: url(../../image/homePage/icon_address.gif) no-repeat;
+        background-size: 100%;
+    }
+}

@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import store from '../../store'
+import './homePage.less'
+
 class HomePage extends Component {
     constructor(props) {
         super(props);
@@ -10,8 +12,10 @@ class HomePage extends Component {
     render() { 
         return ( 
             <Fragment>
-                {this.state.data}
-                <button style={{background:'#1232aa',color:'#ffffff',width:'100px',height:'100px'}} onClick={this.changeClick}>change</button>
+                <div className="address_div">
+                    <i></i>浙江省杭州市
+                </div>
+                <div className="search_div"></div>
             </Fragment>
         );
     }

@@ -31,7 +31,9 @@ class tabBarComponent extends Component {
                         }}
                         data-seed="logId"
                     >
-                        <HomePage/>
+                        <div style={{background:'#ffffff'}}>
+                            <HomePage/>
+                        </div>
                     </TabBar.Item>
                     <TabBar.Item
                         icon={{ uri:require('../../image/tabBar/Supermarket.png')}}
