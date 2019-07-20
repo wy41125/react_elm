@@ -1,0 +1,33 @@
+@import '../../assets/rem.less';
+
+.listCom{
+    .rem(40);
+    padding-top: @rv;
+    &{
+        .rem(56);
+        padding-bottom: @rv;
+    }
+    .list_box{
+        display: flex;
+        justify-content: space-around;
+        .rem(20);
+        padding: @rv 0;
+        .list{
+            &{
+                .rem(130);
+                width: @rv;
+            }
+            img{
+                .rem(80);
+                width: @rv;
+                height: @rv;
+            }
+            text-align: center;
+            color: rgb(102,102,102);
+            &{
+                .rem(26);
+                font-size: @rv;
+            }
+        }
+    }
+}

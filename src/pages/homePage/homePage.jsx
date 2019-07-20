@@ -1,21 +1,40 @@
 import React, { Component, Fragment } from 'react';
 import store from '../../store'
 import './homePage.less'
+import ListComponent from '../../components/listComponent/listComponent'
 
 class HomePage extends Component {
     constructor(props) {
         super(props);
-        this.state = store.getState()
+        this.state = {
+            bannarImg:'../../image/homePage/bannar01.gif',
+        }
         this.changeClick = this.changeClick.bind(this)
         store.subscribe(this.changeClick)
     }
+
     render() { 
         return ( 
             <Fragment>
                 <div className="address_div">
                     <i></i>浙江省杭州市
                 </div>
-                <div className="search_div"></div>
+                <div className="search_div">
+                    <div className="input_div">
+                        <i></i>元祖美食 最高减30
+                    </div>
+                </div>
+                <div className="swipe_div">
+                    <div className="img">
+                        <img src={require('../../image/homePage/bannar01.gif')} alt=""/>
+                    </div>
+                </div>
+                <div className="pageClick">
+                    <ListComponent/>
+                </div>
+                <div>
+                    
+                </div>
             </Fragment>
         );
     }

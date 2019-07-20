@@ -29,3 +29,46 @@
         background-size: 100%;
     }
 }
+.search_div{
+    .rem(36);
+    padding:0 @rv;
+    &{
+        .rem(42);
+        margin: @rv 0;
+    }
+    .input_div{
+        width: 100%;
+        background-color: rgb(237,237,237);
+        text-align: center;
+        border-radius: 50px;
+        .rem(30);
+        padding: @rv 0;
+        &{
+            .rem(34);
+            font-size: @rv;
+            color: rgb(153,153,153);
+        }
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            .rem(40);
+            width: @rv;
+            height: @rv;
+            background: url(../../image/homePage/icon_search.gif) no-repeat;
+            background-size: 100%;
+            &{
+                .rem(26);
+                margin-right: @rv;
+            }
+        }
+    } 
+}
+.swipe_div{
+    .rem(36);
+    padding: 0 @rv;
+    width: 100%;
+    box-sizing: border-box;
+    img{
+        width: 100%;
+    }
+}
