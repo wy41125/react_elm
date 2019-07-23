@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import store from '../../store'
 import './homePage.less'
 import ListComponent from '../../components/listComponent/listComponent'
-
+import BesinessList from '../../components/businessList/besinessList'
 class HomePage extends Component {
     constructor(props) {
         super(props);
@@ -32,8 +32,11 @@ class HomePage extends Component {
                 <div className="pageClick">
                     <ListComponent/>
                 </div>
-                <div>
-                    
+                <div className="business"> 
+                    <div className="title_div">推荐商家</div>
+                    <div className="business_list">
+                        <BesinessList/>
+                    </div>
                 </div>
             </Fragment>
         );
