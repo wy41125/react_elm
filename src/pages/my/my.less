@@ -1,0 +1,190 @@
+@import '../../assets/rem.less';
+.user_top{
+    .rem(60);
+    padding:@rv 0;
+    &{
+        .rem(50);
+        padding-left: @rv;
+        padding-right: @rv;
+    }
+    display: flex;
+    justify-content: space-around;
+    .user_data{
+        width: 70%;
+        .user_name{
+            .rem(56);
+            font-size: @rv;
+            color: #000000;
+            &{
+                .rem(30);
+                margin-bottom: @rv;
+            }
+        }
+        .user_evaluate{
+            .rem(36);
+            font-size: @rv;
+            color: rgb(158, 158, 158);
+            &{
+                .rem(30);
+                margin-bottom: @rv;
+            }
+        }
+        .user_signIn{
+            border:1px solid rgb(200, 200, 200);
+            .rem(20);
+            padding: @rv 0;
+            border-radius: 50px;
+            &{
+                .rem(34);
+                padding-left: @rv;
+                padding-right: @rv;
+            }
+            &{
+                .rem(32);
+                font-size: @rv;
+                color:rgb(97, 97, 97);
+            }
+            i{
+                display: inline-block;
+                .rem(36);
+                width: @rv;
+                &{
+                    .rem(33);
+                    height: @rv;
+                }
+                background: url(../../image/my/icon_checkIn.gif) no-repeat;
+                background-size: 100%;
+                vertical-align: middle;
+                &{
+                    .rem(14);
+                    margin-right: @rv;
+                }
+            }
+        }
+    }
+    .user_img{
+        width: 30%;
+        text-align: right;
+        img{
+            .rem(180);
+            width: @rv;
+            height: @rv;
+        }
+    }
+}
+.VIP_div{
+    .rem(30);
+    margin: 0 @rv;
+    &{
+        .rem(24);
+        margin-bottom: @rv;
+    }
+    background: rgb(248, 234, 203);
+    &{
+        .rem(30);
+        padding: @rv;
+    }
+    display: flex;
+    justify-content: space-between;
+    &{
+        .rem(20);
+        border-radius: @rv;
+    }
+    .VIP_name{
+        color: rgb(96, 74, 53);
+        .rem(32);
+        font-size: @rv;
+        vertical-align: middle;
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            .rem(59);
+            width: @rv;
+            &{
+                .rem(47);
+                height: @rv;
+            }
+            background: url(../../image/my/icon_vip.gif) no-repeat;
+            background-size: 100%;
+            &{
+                .rem(16);
+                margin-right: @rv;
+            }
+        }
+    }
+    .VIP_price{
+        color: rgb(177, 155, 131);
+        vertical-align: middle;
+        .rem(28);
+        font-size: @rv;
+        em{
+            color: rgb(235, 89, 64);
+            .rem(38);
+            font-size: @rv;
+            display: inline-block;
+            &{
+                .rem(10);
+                margin: 0 @rv;
+            }
+        }
+    }
+}
+.dissection{
+    .rem(30);
+    margin: 0 @rv;
+    display: flex;
+    justify-content: space-between;
+    .redBox,.wallet{
+        width: 48%;
+        box-sizing: border-box;
+        .rem(36);
+        padding: @rv 0;
+        box-shadow: 0 0 5px rgb(246, 244, 239);
+        &{
+            .rem(26);
+            padding-left: @rv;
+            padding-right: @rv;
+        }
+        .title{
+            .rem(36);
+            font-size: @rv;
+            color: #000000;
+            font-weight: 600;
+            &{
+                .rem(15);
+                margin-bottom: @rv;
+            }
+        }
+        .text{
+            color: rgb(129, 129, 129);
+            .rem(32);
+            font-size: @rv;
+            em{
+                color: rgb(236, 99, 55);
+                .rem(38);
+                font-size: @rv;
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+        position: relative;
+        .icon{
+            display: inline-block;
+            .rem(59);
+            width: @rv;
+            &{
+                .rem(57);
+                height: @rv;
+            }
+            position: absolute;
+            top: 13px;
+            right: 15px;
+            background: url(../../image/my/icon_redBox.gif) no-repeat;
+            background-size: 100%;
+        }
+    }
+    .wallet>.icon{
+        background: url(../../image/my/icon_wallet.gif) no-repeat;
+        background-size: 100%;
+    }
+}

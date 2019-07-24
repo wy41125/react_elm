@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { TabBar } from 'antd-mobile'
 import HomePage from '../../pages/homePage/homePage'
-
+import My from '../../pages/my/my'
 
 class tabBarComponent extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            selectedTab: 'blueTab',
+            selectedTab: 'yellowTab',
          }
     }
     render() {
@@ -76,7 +76,9 @@ class tabBarComponent extends Component {
                             });
                         }}
                     >
-                        4
+                        <div style={{background:'#ffffff'}}>
+                            <My/>
+                        </div>
                 </TabBar.Item>
                 </TabBar>
           </div>

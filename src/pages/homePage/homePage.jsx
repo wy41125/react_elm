@@ -3,6 +3,8 @@ import store from '../../store'
 import './homePage.less'
 import ListComponent from '../../components/listComponent/listComponent'
 import BesinessList from '../../components/businessList/besinessList'
+import Swiper from '../../components/swiper/swiper'
+
 class HomePage extends Component {
     constructor(props) {
         super(props);
@@ -25,9 +27,10 @@ class HomePage extends Component {
                     </div>
                 </div>
                 <div className="swipe_div">
-                    <div className="img">
+                    {/* <div className="img">
                         <img src={require('../../image/homePage/bannar01.gif')} alt=""/>
-                    </div>
+                    </div> */}
+                    <Swiper/>
                 </div>
                 <div className="pageClick">
                     <ListComponent/>
