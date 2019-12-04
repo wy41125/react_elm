@@ -12,7 +12,7 @@ class RouteConfig extends Component {
                     <Route exact path="/" component={Main}></Route>
                     <Route path="/login" component={Login}></Route>
                 </Switch>
-            </HashRouter>
+            </HashRouter> 
         );
     }
 }

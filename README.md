@@ -6,7 +6,7 @@
 #前言
 这个项目想熟悉下react全家桶的技术框架
 #技术栈
-react16 + react-redux + react-router + es6 + axios + less + webpack
+react16 + react-redux + react-router + antd
 
 # 项目运行
 `node >= 6.0`
