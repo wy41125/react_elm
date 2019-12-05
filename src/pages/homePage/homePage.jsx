@@ -4,6 +4,7 @@ import './homePage.less'
 import ListComponent from '../../components/listComponent/listComponent'
 import BesinessList from '../../components/businessList/besinessList'
 import Swiper from '../../components/swiper/swiper'
+import { Link } from "react-router-dom";
 
 class HomePage extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class HomePage extends Component {
         return ( 
             <Fragment>
                 <div className="address_div">
-                    <i></i>浙江省杭州市
+                    <Link to="/other"><i></i>浙江省杭州市</Link>
                 </div>
                 <div className="search_div">
                     <div className="input_div">

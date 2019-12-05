@@ -8,7 +8,7 @@ class tabBarComponent extends Component {
         super(props);
         this.state = { 
             selectedTab: 'yellowTab',
-         }
+        }
     }
     render() {
         return (
