@@ -24,12 +24,14 @@ class IndexPage extends PureComponent{
     console.log('render');
     return (
       <div>
-        <button onClick={this.changeState}>点击</button>
+        {/* <button onClick={this.changeState}>点击</button>
         <div>
           {this.state.arr.map((item) => {
             return item;
           })}
-        </div>
+        </div> */}
+
+        <Link to="www.baidu.com" >aaa</Link>
       </div>
     );
   }

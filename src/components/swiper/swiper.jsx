@@ -28,15 +28,15 @@ class SwiperCom extends Component {
                         href="http://www.alipay.com"
                         style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                     >
-                    <img
-                        src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
-                        alt=""
-                        style={{ width: '100%', verticalAlign: 'top' }}
-                        onLoad={() => {
-                            window.dispatchEvent(new Event('resize'));
-                            this.setState({ imgHeight: 'auto' });
-                        }}
-                    />
+                        <img
+                            src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                            alt=""
+                            style={{ width: '100%', verticalAlign: 'top' }}
+                            onLoad={() => {
+                                window.dispatchEvent(new Event('resize'));
+                                this.setState({ imgHeight: 'auto' });
+                            }}
+                        />
                     </a>
                 ))}
                 </Carousel>
