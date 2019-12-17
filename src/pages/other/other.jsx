@@ -12,10 +12,6 @@ class IndexPage extends PureComponent{
     let { arr } = this.state;
     arr.push('2');
     console.log(arr);
-    // ["1", "2"]
-    // ["1", "2", "2"]
-    // ["1", "2", "2", "2"] 
-    // ....
     this.setState({
       arr:[...arr,'2']
     })
@@ -24,17 +20,29 @@ class IndexPage extends PureComponent{
     console.log('render');
     return (
       <div>
-        {/* <button onClick={this.changeState}>点击</button>
+        <button onClick={this.changeState}>点击</button>
         <div>
           {this.state.arr.map((item) => {
             return item;
           })}
-        </div> */}
+        </div>
 
-        <Link to="www.baidu.com" >aaa</Link>
+        <Elmper name={'ABC'}>
+          abc
+        </Elmper>
       </div>
     );
   }
 }
+
+function Elmper (props){
+  console.log(props)
+  return (
+    <div>
+      123123123
+    </div>
+  )
+}
+
 
 export default IndexPage
